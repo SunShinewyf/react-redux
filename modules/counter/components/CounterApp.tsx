@@ -30,14 +30,14 @@ const mapDispatchToProps = dispatch => ({
 
 class CounterApp extends React.Component<RootProps, void> {
     render() {
-        const { actions, counter } = this.props;
-
-        return (
-            <div>
-                <button onClick={actions.dec}>-</button>
-                <span onDoubleClick={actions.reset}>{counter}</span>
-                <button onClick={actions.inc}>+</button>
-            </div>
-        );
+        return(
+             <div>
+             <input type="text"/>
+             <button onClick={ e => this.handleClick(e) }>add todolist</button>
+             </div>
+          );  
     }
+    handleClick(e) {
+   
+  }
 }
